@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   author: <<AUTHOR>>
-  description: P
+  description: Deploy <<APPLICATION>>
   license: MIT
   min_ansible_version: 2.5
   platforms:
@@ -21,9 +21,5 @@ galaxy_info:
         - 27
   galaxy_tags:
     - monitoring
-    - prometheus
-    - exporter
-    - metrics
-    - system
 
 dependencies: []

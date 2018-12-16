@@ -1,16 +1,16 @@
 <p><img src="https://www.circonus.com/wp-content/uploads/2015/03/sol-icon-itOps.png" alt="graph logo" title="graph" align="right" height="60" /></p>
 
-# Ansible Role: coredns
+# Ansible Role: <<APPLICATION>>
 
-[![Build Status](https://travis-ci.org/cloudalchemy/ansible-coredns.svg?branch=master)](https://travis-ci.org/cloudalchemy/ansible-coredns)
+[![Build Status](https://travis-ci.org/cloudalchemy/ansible-<<APPLICATION>>.svg?branch=master)](https://travis-ci.org/cloudalchemy/ansible-<<APPLICATION>>)
 [![License](https://img.shields.io/badge/license-MIT%20License-brightgreen.svg)](https://opensource.org/licenses/MIT)
-[![Ansible Role](https://img.shields.io/badge/ansible%20role-cloudalchemy.coredns-blue.svg)](https://galaxy.ansible.com/cloudalchemy/coredns/)
-[![GitHub tag](https://img.shields.io/github/tag/cloudalchemy/ansible-coredns.svg)](https://github.com/cloudalchemy/ansible-coredns/tags)
+[![Ansible Role](https://img.shields.io/badge/ansible%20role-cloudalchemy.<<APPLICATION>>-blue.svg)](https://galaxy.ansible.com/cloudalchemy/<<APPLICATION>>/)
+[![GitHub tag](https://img.shields.io/github/tag/cloudalchemy/ansible-<<APPLICATION>>.svg)](https://github.com/cloudalchemy/ansible-<<APPLICATION>>/tags)
 [![IRC](https://img.shields.io/badge/irc.freenode.net-%23cloudalchemy-yellow.svg)](https://kiwiirc.com/nextclient/#ircs://irc.freenode.net/#cloudalchemy)
 
 ## Description
 
-Deploy prometheus [node exporter](https://github.com/prometheus/coredns) using ansible.
+Deploy [<<APPLICATION>>](https://github.com/prometheus/<<APPLICATION>>) using ansible.
 
 ## Requirements
 
@@ -22,7 +22,7 @@ All variables which can be overridden are stored in [defaults/main.yml](defaults
 
 | Name           | Default Value | Description                        |
 | -------------- | ------------- | -----------------------------------|
-| `coredns_version` | 0.16.0 | Node exporter package version |
+| `<<APPLICAITON>>_web_listen_address` | "0.0.0.0:<<PORT>>" | Address on which <<APPLICATION>> will listen |
 
 ## Example
 
@@ -32,7 +32,7 @@ Use it in a playbook as follows:
 ```yaml
 - hosts: all
   roles:
-    - cloudalchemy.coredns
+    - cloudalchemy.<<APPLICATION>>
 ```
 
 ### Demo site

@@ -14,9 +14,7 @@ Skeleton to create new ansible roles similar to other Cloud Alchemy roles.
 To create a new role, just follow a couple of easy steps:
 1. Clone this repo
 1. Open `create.sh` with your favorite editor
-1. Modify two variables:
-   - APPLICATION
-   - AUTHOR
+1. Modify variables mentioned in that file
 1. Run `create.sh`
 
 ## Result

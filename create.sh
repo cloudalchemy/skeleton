@@ -6,6 +6,9 @@
 # Do not use whitespaces.
 APPLICATION=""
 
+# Port on which your application is listening
+PORT=""
+
 # Your name. Preferably your full name.
 AUTHOR=""
 
@@ -16,3 +19,4 @@ mv "templates/application.service.j2" "templates/${APPLICATION}.service.j2"
 
 find ./ -type f -exec sed -i "s/<<AUTHOR>>/$AUTHOR/g" {} \;
 find ./ -type f -exec sed -i "s/<<APPLICATION>>/$APPLICATION/g" {} \;
+find ./ -type f -exec sed -i "s/<<PORT>>/$PORT/g" {} \;
