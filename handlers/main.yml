@@ -1,0 +1,7 @@
+---
+- name: restart <<APPLICATION>>
+  become: true
+  systemd:
+    daemon_reload: true
+    name: <<APPLICATION>>
+    state: restarted

@@ -1,0 +1,16 @@
+{{ ansible_managed | comment }}
+
+[Unit]
+Description=<<APPLICATION>>
+After=network.target
+
+[Service]
+Type=simple
+User={{ <<APPLICATION>>_system_user }}
+Group={{ <<APPLICATION>>_system_group }}
+ExecStart=/usr/local/bin/<<APPLICATION>>
+SyslogIdentifier=<<APPLICATION>>
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

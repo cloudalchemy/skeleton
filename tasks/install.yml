@@ -1,0 +1,16 @@
+---
+- name: Create the <<APPLICATION>> group
+  group:
+    name: "{{ <<APPLICATION>>_system_group }}"
+    state: present
+    system: true
+
+- name: Create the <<APPLICATION>> user
+  user:
+    name: "{{ <<APPLICATION>>_system_user }}"
+    groups: "{{ <<APPLICATION>>_system_group }}"
+    append: true
+    shell: /usr/sbin/nologin
+    system: true
+    createhome: false
+    home: /

@@ -1,0 +1,36 @@
+---
+- name: Gather variables for each operating system
+  include_vars: "{{ item }}"
+  with_first_found:
+    - "{{ ansible_distribution_file_variety | lower }}.yml"
+    - "{{ ansible_distribution | lower }}.yml"
+    - "{{ ansible_os_family | lower }}.yml"
+  tags:
+    - <<APPLICATION>>_install
+    - <<APPLICATION>>_configure
+    - <<APPLICATION>>_run
+
+- import_tasks: preflight.yml
+  tags:
+    - <<APPLICATION>>_install
+    - <<APPLICATION>>_configure
+    - <<APPLICATION>>_run
+
+- import_tasks: install.yml
+  become: true
+  tags:
+    - <<APPLICATION>>_install
+
+- import_tasks: configure.yml
+  become: true
+  tags:
+    - <<APPLICATION>>_configure
+
+- name: Ensure <<APPLICATION>> is enabled on boot
+  become: true
+  systemd:
+    daemon_reload: true
+    name: <<APPLICATION>>
+    enabled: true
+  tags:
+    - <<APPLICATION>>_run
