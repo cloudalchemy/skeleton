@@ -1,5 +1,3 @@
-<p><img src="https://www.circonus.com/wp-content/uploads/2015/03/sol-icon-itOps.png" alt="graph logo" title="graph" align="right" height="60" /></p>
-
 # Ansible Role: <<APPLICATION>>
 
 [![Build Status](https://travis-ci.org/cloudalchemy/ansible-<<APPLICATION>>.svg?branch=master)](https://travis-ci.org/cloudalchemy/ansible-<<APPLICATION>>)
