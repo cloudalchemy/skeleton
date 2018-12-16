@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# To create a new role using this skeleton fill two variables and run this script. Remove this file after role creation.
+# To create a new role using this skeleton fill variables and run this script. Remove this file after role creation.
 
 # This variable ideally should contain the name of an application which will be deployed with ansible role.
 # Do not use whitespaces.
