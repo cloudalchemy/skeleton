@@ -1,4 +1,4 @@
-<p><img src="https://www.circonus.com/wp-content/uploads/2015/03/sol-icon-itOps.png" alt="graph logo" title="graph" align="right" height="60" /></p>
+<p><img src="http://pngimg.com/uploads/skeleton/skeleton_PNG42642.png" alt="skeleton logo" title="graph" align="right" height="60" /></p>
 
 # Cloud Alchemy Ansible Role Skeleton
 
