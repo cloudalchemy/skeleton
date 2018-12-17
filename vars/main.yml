@@ -6,7 +6,7 @@ go_arch_map:
   armv7l: 'armv7'
   armv6l: 'armv6'
 
-cpu_architecture: "{{ go_arch_map[ansible_architecture] | default(ansible_architecture) }}"
+go_arch: "{{ go_arch_map[ansible_architecture] | default(ansible_architecture) }}"
 
 <<APPLICATION>>_system_user: "<<APPLICATION>>"
 <<APPLICATION>>_system_group: "<<APPLICATION>>"
