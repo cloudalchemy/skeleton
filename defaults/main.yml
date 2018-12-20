@@ -1,2 +1,2 @@
 ---
-<<APPLICAITON>>_web_listen_address: "0.0.0.0:<<PORT>>"
+<<APPLICATION>>_web_listen_address: "0.0.0.0:<<PORT>>"
