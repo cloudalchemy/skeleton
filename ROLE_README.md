@@ -20,7 +20,7 @@ All variables which can be overridden are stored in [defaults/main.yml](defaults
 
 | Name           | Default Value | Description                        |
 | -------------- | ------------- | -----------------------------------|
-| `<<APPLICAITON>>_web_listen_address` | "0.0.0.0:<<PORT>>" | Address on which <<APPLICATION>> will listen |
+| `<<APPLICATION>>_web_listen_address` | "0.0.0.0:<<PORT>>" | Address on which <<APPLICATION>> will listen |
 
 ## Example
 
