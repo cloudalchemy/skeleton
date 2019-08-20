@@ -2,9 +2,9 @@
 galaxy_info:
   author: <<AUTHOR>>
   description: Deploy <<APPLICATION>>
+  role_name: <<APPLICATION>>
   license: MIT
   min_ansible_version: 2.6
-  role_name: <<APPLICATION>>
   platforms:
     - name: Ubuntu
       versions:

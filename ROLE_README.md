@@ -12,7 +12,7 @@ Deploy [<<APPLICATION>>](https://github.com/prometheus/<<APPLICATION>>) using an
 
 ## Requirements
 
-- Ansible >= 2.5 (It might work on previous versions, but we cannot guarantee it)
+- Ansible >= 2.6 (It might work on previous versions, but we cannot guarantee it)
 
 ## Role Variables
 
@@ -50,7 +50,7 @@ tox
 ```
 To run a custom molecule command on custom environment with only default test scenario:
 ```sh
-tox -e py27-ansible25 -- molecule test -s default
+tox -e py35-ansible28 -- molecule test -s default
 ```
 For more information about molecule go to their [docs](http://molecule.readthedocs.io/en/latest/).
 
