@@ -4,6 +4,7 @@
 Description=<<APPLICATION>>
 After=network-online.target
 StartLimitInterval=0
+StartLimitIntervalSec=0
 
 [Service]
 Type=simple
@@ -12,7 +13,7 @@ Group={{ <<APPLICATION>>_system_group }}
 ExecStart=/usr/local/bin/<<APPLICATION>>
 SyslogIdentifier=<<APPLICATION>>
 Restart=always
-RestartSec=1
+RestartSec=5
 
 [Install]
 WantedBy=multi-user.target

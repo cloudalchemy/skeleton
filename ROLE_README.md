@@ -1,6 +1,6 @@
 # Ansible Role: <<APPLICATION>>
 
-[![Build Status](https://travis-ci.org/cloudalchemy/ansible-<<APPLICATION>>.svg?branch=master)](https://travis-ci.org/cloudalchemy/ansible-<<APPLICATION>>)
+[![Build Status](https://travis-ci.com/cloudalchemy/ansible-<<APPLICATION>>.svg?branch=master)](https://travis-ci.com/cloudalchemy/ansible-<<APPLICATION>>)
 [![License](https://img.shields.io/badge/license-MIT%20License-brightgreen.svg)](https://opensource.org/licenses/MIT)
 [![Ansible Role](https://img.shields.io/badge/ansible%20role-cloudalchemy.<<APPLICATION>>-blue.svg)](https://galaxy.ansible.com/cloudalchemy/<<APPLICATION>>/)
 [![GitHub tag](https://img.shields.io/github/tag/cloudalchemy/ansible-<<APPLICATION>>.svg)](https://github.com/cloudalchemy/ansible-<<APPLICATION>>/tags)
@@ -42,7 +42,7 @@ We provide demo site for full monitoring solution based on prometheus and grafan
 The preferred way of locally testing the role is to use Docker and [molecule](https://github.com/metacloud/molecule) (v2.x). You will have to install Docker on your system. See "Get started" for a Docker package suitable to for your system.
 We are using tox to simplify process of testing on multiple ansible versions. To install tox execute:
 ```sh
-pip install tox
+pip3 install tox
 ```
 To run tests on all ansible versions (WARNING: this can take some time)
 ```sh
