@@ -4,6 +4,7 @@ galaxy_info:
   description: Deploy <<APPLICATION>>
   role_name: <<APPLICATION>>
   license: MIT
+  company: none
   min_ansible_version: 2.6
   platforms:
     - name: Ubuntu
