@@ -27,6 +27,10 @@ provisioner:
     prepare: ../default/prepare.yml
     converge: playbook.yml
     destroy: ../default/destroy.yml
+  inventory:
+    group_vars:
+      all:
+        ansible_python_interpreter: /usr/bin/python3
 scenario:
   name: latest
 verifier:
