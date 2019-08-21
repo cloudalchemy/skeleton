@@ -18,6 +18,8 @@ platforms:
     privileged: true
     volumes:
       - /sys/fs/cgroup:/sys/fs/cgroup:ro
+    groups:
+      - python3
 provisioner:
   name: ansible
   lint:
@@ -29,7 +31,7 @@ provisioner:
     destroy: ../default/destroy.yml
   inventory:
     group_vars:
-      all:
+      python3:
         ansible_python_interpreter: /usr/bin/python3
 scenario:
   name: latest
