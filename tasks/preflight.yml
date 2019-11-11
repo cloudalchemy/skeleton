@@ -1,5 +1,5 @@
 ---
-- name: Fail on unsupported init systems
-  fail:
+- name: Assert usage of systemd as an init system
+  assert:
+    that: ansible_service_mgr == 'systemd'
     msg: "This module only works with systemd"
-  when: ansible_service_mgr != 'systemd'
