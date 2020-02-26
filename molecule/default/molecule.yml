@@ -3,8 +3,11 @@ dependency:
   name: galaxy
 driver:
   name: docker
-lint:
-  name: yamllint
+lint: |
+  set -e
+  yamllint .
+  ansible-lint
+  flake8
 platforms:
   - name: bionic
     image: quay.io/paulfantom/molecule-systemd:ubuntu-18.04
@@ -54,8 +57,6 @@ platforms:
       - python3
 provisioner:
   name: ansible
-  lint:
-    name: ansible-lint
   playbooks:
     create: create.yml
     prepare: prepare.yml
@@ -69,6 +70,3 @@ scenario:
   name: default
 verifier:
   name: testinfra
-  lint:
-    name: flake8
-    enabled: true
