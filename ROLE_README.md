@@ -32,10 +32,6 @@ Use it in a playbook as follows:
     - cloudalchemy.<<APPLICATION>>
 ```
 
-### Demo site
-
-We provide demo site for full monitoring solution based on prometheus and grafana. Repository with code and links to running instances is [available on github](https://github.com/cloudalchemy/demo-site) and site is hosted on [DigitalOcean](https://digitalocean.com).
-
 ## Local Testing
 
 The preferred way of locally testing the role is to use Docker and [molecule](https://github.com/metacloud/molecule) (v2.x). You will have to install Docker on your system. See "Get started" for a Docker package suitable to for your system.
