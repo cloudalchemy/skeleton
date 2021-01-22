@@ -1,7 +1,7 @@
 # Contributor Guideline
 
 This document provides an overview of how you can participate in improving this project or extending it. We are
-grateful for all your help: bug reports and fixes, code contributions, documentation or ideas. Feel free to join, we 
+grateful for all your help: bug reports and fixes, code contributions, documentation or ideas. Feel free to join, we
 appreciate your support!!
 
 ## Communication
@@ -36,13 +36,13 @@ Some great guidelines can be found [here](https://wiki.openstack.org/wiki/GitCom
 We try to stick to semantic versioning and our releases are automated. Release is created by assigning a keyword (in a
 way similar to circle ci keyword [`[ci skip]`](https://docs.travis-ci.com/user/customizing-the-build#Skipping-a-build))
 to a commit with merge request. Available keywords are (square brackets are important!):
- 
+
 * `[patch]`, `[fix]`, `[bugfix]` - for PATCH version release
 * `[minor]`, `[feature]`, `[feat]` - for MINOR version release
 * `[major]`, `[breaking change]` - for MAJOR version release
- 
+
 ## Changelog
- 
+
 Changelog is generated automatically during release process and all information is taken from github issues, PRs and
 labels.
 
@@ -64,8 +64,8 @@ or action that produced the error. Try to catch and handle errors if possible to
 ### Add tests
 
 We are striving to use at least two test scenarios located in [/molecule](molecule) directory. First one
-([default](molecule/default)) is testing default configuration without any additional variables, second one 
-([alternative](molecule/alternative)) is testing what happens when many variables from 
+([default](molecule/default)) is testing default configuration without any additional variables, second one
+([alternative](molecule/alternative)) is testing what happens when many variables from
 [/defaults/main.yml](defaults/main.yml) are changed. When adding new functionalities please add tests to proper
 scenarios. Tests are written in testinfra framework and are located in `/tests` subdirectory of scenario directory
 (for example default tests are in [/molecule/default/tests](molecule/default/tests)).
@@ -88,7 +88,7 @@ Remember: Code is generally read much more often than written.
 
 Wherever possible, please refrain from any other formats and stick to simple markdown.
 
-## Requirements regarding roles design 
+## Requirements regarding roles design
 
 We are trying to create the best and most secure installation method for non-containerized prometheus stack components.
 To accomplish this all roles need to support:
