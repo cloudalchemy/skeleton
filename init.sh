@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Port on which your application is listening
 PORT="${1}"
@@ -32,7 +32,10 @@ fi
 
 rm README.md
 mv ROLE_README.md README.md
-mv "templates/application.service.j2" "templates/${APPLICATION}.service.j2"
+mv 'templates/application.service.j2' "templates/${APPLICATION}.service.j2"
+
+mkdir -p '.circleci'
+mv 'circleci-config.yml' '.circleci/config.yml'
 
 find ./ -type f -exec sed -i "s/<<AUTHOR>>/$AUTHOR/g" {} \;
 find ./ -type f -exec sed -i "s/<<APPLICATION>>/$APPLICATION/g" {} \;
