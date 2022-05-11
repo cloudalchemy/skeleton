@@ -18,7 +18,7 @@ To create a new role, just follow a couple of easy steps:
 
 ## Result
 
-After running `init.sh` it will convert this repo into a directory structure with everything needed to start 
+After running `init.sh` it will convert this repo into a directory structure with everything needed to start
 developing new Cloud Alchemy ansible role.
 
 ## Warnings
