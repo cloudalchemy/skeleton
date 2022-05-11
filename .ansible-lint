@@ -1,5 +1,5 @@
 ---
 skip_list:
-- '106'
-- '204'
-- '208'
+ - role-name  # 106
+ - risky-file-permissions  # 208
+ - fqcn-builtins  # skip fqcn for ansible <2.9 compatibility
